@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XX美甲工作室</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+body{
+    background-color: #fff8fa;
+}
+/* 头部banner，透明氛围感美甲背景 */
+.hero{
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    color: #222;
+    /* 美甲氛围感背景图 + 粉色柔光遮罩，文字看得清 */
+    background: linear-gradient(rgba(255, 200, 210, 0.72), rgba(255, 200, 210, 0.72)),
+    url("https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+}
+.hero h1{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.hero p{
+    font-size: 17px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.btn-reserve{
+    display: inline-block;
+    background: #ff4477;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:16px 48px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(255, 68, 119, 0.35);
+}
+
+/* 作品板块 */
+.work-section{
+    padding: 45px 20px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.work-title{
+    text-align: center;
+    font-size: 30px;
+    color: #c83e60;
+    margin-bottom: 26px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:16px;
+}
+.gallery-item{
+    border-radius: 22px;
+    overflow: hidden;
+    background: #f8f0f3;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    min-height: 260px;
+}
+.gallery-item img{
+    width:100%;
+    height: 260px;
+    object-fit: contain;
+    background: #f8f0f3;
+    display:block;
+    loading: lazy;
+}
+
+/* 价目板块 */
+.price-section{
+    max-width:700px;
+    margin:0 auto 30px;
+    padding:0 20px 40px;
+}
+.price-title{
+    text-align:center;
+    font-size:24px;
+    color:#c83e60;
+    margin-bottom:20px;
+}
+.price-box{
+    background:#ffffff;
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 2px 10px #00000010;
+}
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #ffe0e7;
+    font-size:16px;
+}
+
+/* 联系板块 */
+.contact-section{
+    max-width:700px;
+    margin:0 auto 40px;
+    padding:0 20px;
+}
+.contact-title{
+    text-align:center;
+    font-size:24px;
+    color:#c83e60;
+    margin-bottom:20px;
+}
+.contact-box{
+    background:#ffe7ec;
+    border-radius:20px;
+    padding:28px;
+    text-align:center;
+}
+.contact-box p{
+    margin:10px 0;
+    font-size:17px;
+}
+.footer{
+    text-align:center;
+    padding:20px;
+    color:#999;
+    font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>✨XX美甲工作室✨</h1>
+    <p>温柔款式｜细致前置处理｜持久牢固</p>
+    <a href="#contact" class="btn-reserve">立即预约</a>
+</div>
+
+<div class="work-section">
+    <h2 class="work-title">💅 作品展示</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/60de7f510cc7f44b072f041f228297ee.jpg" alt="美甲作品1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/89ccef0241625a9c91d57bd9034ec58d.jpg" alt="美甲作品2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/cf24412db4a345597bd9f89770f7aef2.jpg" alt="美甲作品3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/2ba5a1bab7a7fd3413ca43be7b232013.jpg" alt="美甲作品4">
+        </div>
+    </div>
+</div>
+
+<div class="price-section">
+    <h2 class="price-title">💰参考价目</h2>
+    <div class="price-box">
+        <div class="price-row"><span>纯色美甲（含建构）</span><span>¥88起</span></div>
+        <div class="price-row"><span>简约款式美甲</span><span>¥128起</span></div>
+        <div class="price-row"><span>复杂手绘/钻款</span><span>¥168起</span></div>
+        <div class="price-row"><span>美睫YY款</span><span>¥98起</span></div>
+        <div class="price-row"><span>卸甲（本店做的免费）</span><span>¥20</span></div>
+    </div>
+</div>
+
+<div class="contact-section" id="contact">
+    <h2 class="contact-title">📞预约方式</h2>
+    <div class="contact-box">
+        <p>📍地址：这里填门店地址</p>
+        <p>💬微信：这里填老板微信号</p>
+        <p>⏰营业时间：10:00 - 21:00</p>
+        <p>💡建议提前预约，避免跑空</p>
+    </div>
+</div>
+
+<div class="footer">
+本页面仅店内客户私域展示｜不用于美团投放
+</div>
+
+</body>
+</html>
